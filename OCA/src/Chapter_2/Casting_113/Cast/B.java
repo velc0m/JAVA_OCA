@@ -5,5 +5,15 @@ package Chapter_2.Casting_113.Cast;
  */
 public class B extends A {
 
+    static int as = 20;
+    int b = 10;
+
+    void go() {
+
+    }
+
+    byte getSh() {
+        return 127;
+    }
 
 }
