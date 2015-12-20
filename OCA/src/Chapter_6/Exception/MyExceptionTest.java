@@ -5,7 +5,7 @@ package Chapter_6.Exception;
  */
 public class MyExceptionTest {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MyExceptionTop{
 
         try {
             checkFood("apple");
@@ -17,7 +17,22 @@ public class MyExceptionTest {
         }
         System.out.println("It is the End!");
 
+        System.out.println("-----------------");
+
+        try {
+            tryThrowMyException();
+        } catch (MyExceptionTop my) {
+            my.getMessagegFromMe();
+            System.out.println("From catch ");
+        } finally {
+            throw new MyExceptionTop();
+        }
     }
+
+    static void tryThrowMyException() throws MyExceptionSubClass {
+        throw new MyExceptionSubClass();
+    }
+
 
     static void checkFood(String food) throws BadFoodException {
 

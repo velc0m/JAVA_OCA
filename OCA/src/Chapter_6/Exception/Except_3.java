@@ -9,14 +9,14 @@ public class Except_3 {
 
         try {
             doStuff();
-        } catch (myOwnException e) {
+        } catch (MyExceptionTop e) {
             e.getMessagegFromMe();
         }
 
     }
 
-    static void doStuff() throws myOwnException {
-        throw new myOwnException();
+    static void doStuff() throws MyExceptionTop {
+        throw new MyExceptionTop();
     }
 
 }
