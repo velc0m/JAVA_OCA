@@ -1,37 +1,11 @@
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 /**
- * Created by MaxiM on 19.12.2015.
+ * Created by MaxiM on 16.01.2016.
  */
-public class B extends A {
+public class B implements Runnable {
 
-    int a = 2;
-
-    /*public B(int a) throws Exception{
-        super(a);
-    }*/
-
-    int getA(){
-        System.out.println("From B a = " + a);
-        return a;
-    }
 
     @Override
-    void getB() throws FileNotFoundException{
-
-    }
-
-    @Override
-    void getC(){
-
-    }
-
-    public static void main(String[] args) {
-        A a = new B();
-        //a.getC();
-        String str = "Hello world";
-        System.out.println((int)'<');
-        System.out.println(str.charAt(1));
+    public void run() {
+        System.out.println("Hello from thread B");
     }
 }
