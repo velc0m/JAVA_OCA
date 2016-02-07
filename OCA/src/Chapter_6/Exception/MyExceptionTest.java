@@ -5,7 +5,7 @@ package Chapter_6.Exception;
  */
 public class MyExceptionTest {
 
-    public static void main(String[] args) throws MyExceptionTop{
+    public static void main(String[] args) throws MyExceptionTop {
 
         try {
             checkFood("apple");
