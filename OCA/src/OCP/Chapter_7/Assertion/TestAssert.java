@@ -16,5 +16,4 @@ public class TestAssert {
         assert (a > 3): "a = " + a;
         System.out.println("all is OK");
     }
-
 }
